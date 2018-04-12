@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		170FF5D12077351500A5ECF7 /* WeatherForecastDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E8E5420769E1F00FE98A0 /* WeatherForecastDataModel.swift */; };
+		170FF5D22077351800A5ECF7 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E8E5220767A6E00FE98A0 /* WeatherDataModel.swift */; };
+		171AC2922076770E000AFAAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AC2912076770E000AFAAF /* AppDelegate.swift */; };
+		171AC2942076770E000AFAAF /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AC2932076770E000AFAAF /* WeatherViewController.swift */; };
+		171AC2972076770E000AFAAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171AC2952076770E000AFAAF /* Main.storyboard */; };
+		171AC2992076770E000AFAAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171AC2982076770E000AFAAF /* Assets.xcassets */; };
+		171AC29C2076770E000AFAAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171AC29A2076770E000AFAAF /* LaunchScreen.storyboard */; };
+		171AC2A72076770E000AFAAF /* SharkDevelopTestTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AC2A62076770E000AFAAF /* SharkDevelopTestTaskTests.swift */; };
+		171AC2B22076770E000AFAAF /* SharkDevelopTestTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AC2B12076770E000AFAAF /* SharkDevelopTestTaskUITests.swift */; };
+		178E7016207F3F9B00F07598 /* WeatherConditionIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178E7015207F3F9B00F07598 /* WeatherConditionIconManager.swift */; };
+		179E8E582077318C00FE98A0 /* WeatherForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E8E572077318C00FE98A0 /* WeatherForecastCell.swift */; };
+		17AA7695207CA4BC00E3DCCC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AA7694207CA4BC00E3DCCC /* Reachability.swift */; };
+		17AA7698207CB36000E3DCCC /* SharkDevelopTestTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17AA7696207CB36000E3DCCC /* SharkDevelopTestTask.xcdatamodeld */; };
+		17FDAE53207C7A20009460E5 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FDAE52207C7A20009460E5 /* JsonParser.swift */; };
+		C65A935EAE93047369ABA5EB /* Pods_SharkDevelopTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C131C5045F7F7A091112ED /* Pods_SharkDevelopTestTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		171AC2A32076770E000AFAAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 171AC2862076770E000AFAAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 171AC28D2076770E000AFAAF;
+			remoteInfo = SharkDevelopTestTask;
+		};
+		171AC2AE2076770E000AFAAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 171AC2862076770E000AFAAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 171AC28D2076770E000AFAAF;
+			remoteInfo = SharkDevelopTestTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		171AC28E2076770E000AFAAF /* SharkDevelopTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkDevelopTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		171AC2912076770E000AFAAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		171AC2932076770E000AFAAF /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		171AC2962076770E000AFAAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		171AC2982076770E000AFAAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		171AC29B2076770E000AFAAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		171AC29D2076770E000AFAAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171AC2A22076770E000AFAAF /* SharkDevelopTestTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharkDevelopTestTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		171AC2A62076770E000AFAAF /* SharkDevelopTestTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkDevelopTestTaskTests.swift; sourceTree = "<group>"; };
+		171AC2A82076770E000AFAAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		171AC2AD2076770E000AFAAF /* SharkDevelopTestTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharkDevelopTestTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		171AC2B12076770E000AFAAF /* SharkDevelopTestTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharkDevelopTestTaskUITests.swift; sourceTree = "<group>"; };
+		171AC2B32076770E000AFAAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		178E7015207F3F9B00F07598 /* WeatherConditionIconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConditionIconManager.swift; sourceTree = "<group>"; };
+		179E8E5220767A6E00FE98A0 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		179E8E5420769E1F00FE98A0 /* WeatherForecastDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastDataModel.swift; sourceTree = "<group>"; };
+		179E8E572077318C00FE98A0 /* WeatherForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastCell.swift; sourceTree = "<group>"; };
+		17AA7694207CA4BC00E3DCCC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		17AA7697207CB36000E3DCCC /* SharkDevelopTestTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SharkDevelopTestTask.xcdatamodel; sourceTree = "<group>"; };
+		17FDAE52207C7A20009460E5 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		19C131C5045F7F7A091112ED /* Pods_SharkDevelopTestTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharkDevelopTestTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A6B915F61829E1BAA6D6A4 /* Pods-SharkDevelopTestTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharkDevelopTestTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SharkDevelopTestTask/Pods-SharkDevelopTestTask.debug.xcconfig"; sourceTree = "<group>"; };
+		77CFBDB98C83FF2A890EA93D /* Pods-SharkDevelopTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharkDevelopTestTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharkDevelopTestTask/Pods-SharkDevelopTestTask.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		171AC28B2076770E000AFAAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C65A935EAE93047369ABA5EB /* Pods_SharkDevelopTestTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171AC29F2076770E000AFAAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171AC2AA2076770E000AFAAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		171AC2852076770E000AFAAF = {
+			isa = PBXGroup;
+			children = (
+				171AC2902076770E000AFAAF /* SharkDevelopTestTask */,
+				171AC2A52076770E000AFAAF /* SharkDevelopTestTaskTests */,
+				171AC2B02076770E000AFAAF /* SharkDevelopTestTaskUITests */,
+				171AC28F2076770E000AFAAF /* Products */,
+				95AECA91AC6916B946748123 /* Pods */,
+				9021BC2DF4B320085CC67418 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		171AC28F2076770E000AFAAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				171AC28E2076770E000AFAAF /* SharkDevelopTestTask.app */,
+				171AC2A22076770E000AFAAF /* SharkDevelopTestTaskTests.xctest */,
+				171AC2AD2076770E000AFAAF /* SharkDevelopTestTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		171AC2902076770E000AFAAF /* SharkDevelopTestTask */ = {
+			isa = PBXGroup;
+			children = (
+				179E8E562077316700FE98A0 /* Utils */,
+				179E8E5120767A5000FE98A0 /* Controller */,
+				179E8E5020767A3F00FE98A0 /* View */,
+				179E8E4F20767A3A00FE98A0 /* Model */,
+				171AC2912076770E000AFAAF /* AppDelegate.swift */,
+				171AC2982076770E000AFAAF /* Assets.xcassets */,
+				171AC29A2076770E000AFAAF /* LaunchScreen.storyboard */,
+				171AC29D2076770E000AFAAF /* Info.plist */,
+				17AA7696207CB36000E3DCCC /* SharkDevelopTestTask.xcdatamodeld */,
+			);
+			path = SharkDevelopTestTask;
+			sourceTree = "<group>";
+		};
+		171AC2A52076770E000AFAAF /* SharkDevelopTestTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				171AC2A62076770E000AFAAF /* SharkDevelopTestTaskTests.swift */,
+				171AC2A82076770E000AFAAF /* Info.plist */,
+			);
+			path = SharkDevelopTestTaskTests;
+			sourceTree = "<group>";
+		};
+		171AC2B02076770E000AFAAF /* SharkDevelopTestTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				171AC2B12076770E000AFAAF /* SharkDevelopTestTaskUITests.swift */,
+				171AC2B32076770E000AFAAF /* Info.plist */,
+			);
+			path = SharkDevelopTestTaskUITests;
+			sourceTree = "<group>";
+		};
+		179E8E4F20767A3A00FE98A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				179E8E5220767A6E00FE98A0 /* WeatherDataModel.swift */,
+				179E8E5420769E1F00FE98A0 /* WeatherForecastDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		179E8E5020767A3F00FE98A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				171AC2952076770E000AFAAF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		179E8E5120767A5000FE98A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				171AC2932076770E000AFAAF /* WeatherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		179E8E562077316700FE98A0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				179E8E572077318C00FE98A0 /* WeatherForecastCell.swift */,
+				17FDAE52207C7A20009460E5 /* JsonParser.swift */,
+				17AA7694207CA4BC00E3DCCC /* Reachability.swift */,
+				178E7015207F3F9B00F07598 /* WeatherConditionIconManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9021BC2DF4B320085CC67418 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19C131C5045F7F7A091112ED /* Pods_SharkDevelopTestTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95AECA91AC6916B946748123 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57A6B915F61829E1BAA6D6A4 /* Pods-SharkDevelopTestTask.debug.xcconfig */,
+				77CFBDB98C83FF2A890EA93D /* Pods-SharkDevelopTestTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		171AC28D2076770E000AFAAF /* SharkDevelopTestTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171AC2B62076770E000AFAAF /* Build configuration list for PBXNativeTarget "SharkDevelopTestTask" */;
+			buildPhases = (
+				2CE2CA715988A331D829D470 /* [CP] Check Pods Manifest.lock */,
+				171AC28A2076770E000AFAAF /* Sources */,
+				171AC28B2076770E000AFAAF /* Frameworks */,
+				171AC28C2076770E000AFAAF /* Resources */,
+				B036B912329C3DAD94893A0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharkDevelopTestTask;
+			productName = SharkDevelopTestTask;
+			productReference = 171AC28E2076770E000AFAAF /* SharkDevelopTestTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		171AC2A12076770E000AFAAF /* SharkDevelopTestTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171AC2B92076770E000AFAAF /* Build configuration list for PBXNativeTarget "SharkDevelopTestTaskTests" */;
+			buildPhases = (
+				171AC29E2076770E000AFAAF /* Sources */,
+				171AC29F2076770E000AFAAF /* Frameworks */,
+				171AC2A02076770E000AFAAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				171AC2A42076770E000AFAAF /* PBXTargetDependency */,
+			);
+			name = SharkDevelopTestTaskTests;
+			productName = SharkDevelopTestTaskTests;
+			productReference = 171AC2A22076770E000AFAAF /* SharkDevelopTestTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		171AC2AC2076770E000AFAAF /* SharkDevelopTestTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171AC2BC2076770E000AFAAF /* Build configuration list for PBXNativeTarget "SharkDevelopTestTaskUITests" */;
+			buildPhases = (
+				171AC2A92076770E000AFAAF /* Sources */,
+				171AC2AA2076770E000AFAAF /* Frameworks */,
+				171AC2AB2076770E000AFAAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				171AC2AF2076770E000AFAAF /* PBXTargetDependency */,
+			);
+			name = SharkDevelopTestTaskUITests;
+			productName = SharkDevelopTestTaskUITests;
+			productReference = 171AC2AD2076770E000AFAAF /* SharkDevelopTestTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		171AC2862076770E000AFAAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Nikita Elizarov";
+				TargetAttributes = {
+					171AC28D2076770E000AFAAF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					171AC2A12076770E000AFAAF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 171AC28D2076770E000AFAAF;
+					};
+					171AC2AC2076770E000AFAAF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 171AC28D2076770E000AFAAF;
+					};
+				};
+			};
+			buildConfigurationList = 171AC2892076770E000AFAAF /* Build configuration list for PBXProject "SharkDevelopTestTask" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 171AC2852076770E000AFAAF;
+			productRefGroup = 171AC28F2076770E000AFAAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				171AC28D2076770E000AFAAF /* SharkDevelopTestTask */,
+				171AC2A12076770E000AFAAF /* SharkDevelopTestTaskTests */,
+				171AC2AC2076770E000AFAAF /* SharkDevelopTestTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		171AC28C2076770E000AFAAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171AC29C2076770E000AFAAF /* LaunchScreen.storyboard in Resources */,
+				171AC2992076770E000AFAAF /* Assets.xcassets in Resources */,
+				171AC2972076770E000AFAAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171AC2A02076770E000AFAAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171AC2AB2076770E000AFAAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CE2CA715988A331D829D470 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SharkDevelopTestTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B036B912329C3DAD94893A0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SharkDevelopTestTask/Pods-SharkDevelopTestTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SharkDevelopTestTask/Pods-SharkDevelopTestTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		171AC28A2076770E000AFAAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17AA7695207CA4BC00E3DCCC /* Reachability.swift in Sources */,
+				178E7016207F3F9B00F07598 /* WeatherConditionIconManager.swift in Sources */,
+				170FF5D12077351500A5ECF7 /* WeatherForecastDataModel.swift in Sources */,
+				170FF5D22077351800A5ECF7 /* WeatherDataModel.swift in Sources */,
+				17FDAE53207C7A20009460E5 /* JsonParser.swift in Sources */,
+				17AA7698207CB36000E3DCCC /* SharkDevelopTestTask.xcdatamodeld in Sources */,
+				171AC2942076770E000AFAAF /* WeatherViewController.swift in Sources */,
+				179E8E582077318C00FE98A0 /* WeatherForecastCell.swift in Sources */,
+				171AC2922076770E000AFAAF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171AC29E2076770E000AFAAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171AC2A72076770E000AFAAF /* SharkDevelopTestTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171AC2A92076770E000AFAAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171AC2B22076770E000AFAAF /* SharkDevelopTestTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		171AC2A42076770E000AFAAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 171AC28D2076770E000AFAAF /* SharkDevelopTestTask */;
+			targetProxy = 171AC2A32076770E000AFAAF /* PBXContainerItemProxy */;
+		};
+		171AC2AF2076770E000AFAAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 171AC28D2076770E000AFAAF /* SharkDevelopTestTask */;
+			targetProxy = 171AC2AE2076770E000AFAAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		171AC2952076770E000AFAAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171AC2962076770E000AFAAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		171AC29A2076770E000AFAAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				171AC29B2076770E000AFAAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		171AC2B42076770E000AFAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		171AC2B52076770E000AFAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		171AC2B72076770E000AFAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57A6B915F61829E1BAA6D6A4 /* Pods-SharkDevelopTestTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRTXJ75BR6;
+				INFOPLIST_FILE = SharkDevelopTestTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xenil.SharkDevelopTestTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		171AC2B82076770E000AFAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CFBDB98C83FF2A890EA93D /* Pods-SharkDevelopTestTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRTXJ75BR6;
+				INFOPLIST_FILE = SharkDevelopTestTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xenil.SharkDevelopTestTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		171AC2BA2076770E000AFAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRTXJ75BR6;
+				INFOPLIST_FILE = SharkDevelopTestTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xenil.SharkDevelopTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharkDevelopTestTask.app/SharkDevelopTestTask";
+			};
+			name = Debug;
+		};
+		171AC2BB2076770E000AFAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRTXJ75BR6;
+				INFOPLIST_FILE = SharkDevelopTestTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xenil.SharkDevelopTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SharkDevelopTestTask.app/SharkDevelopTestTask";
+			};
+			name = Release;
+		};
+		171AC2BD2076770E000AFAAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRTXJ75BR6;
+				INFOPLIST_FILE = SharkDevelopTestTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xenil.SharkDevelopTestTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SharkDevelopTestTask;
+			};
+			name = Debug;
+		};
+		171AC2BE2076770E000AFAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NRTXJ75BR6;
+				INFOPLIST_FILE = SharkDevelopTestTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xenil.SharkDevelopTestTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SharkDevelopTestTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		171AC2892076770E000AFAAF /* Build configuration list for PBXProject "SharkDevelopTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171AC2B42076770E000AFAAF /* Debug */,
+				171AC2B52076770E000AFAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171AC2B62076770E000AFAAF /* Build configuration list for PBXNativeTarget "SharkDevelopTestTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171AC2B72076770E000AFAAF /* Debug */,
+				171AC2B82076770E000AFAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171AC2B92076770E000AFAAF /* Build configuration list for PBXNativeTarget "SharkDevelopTestTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171AC2BA2076770E000AFAAF /* Debug */,
+				171AC2BB2076770E000AFAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171AC2BC2076770E000AFAAF /* Build configuration list for PBXNativeTarget "SharkDevelopTestTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171AC2BD2076770E000AFAAF /* Debug */,
+				171AC2BE2076770E000AFAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17AA7696207CB36000E3DCCC /* SharkDevelopTestTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17AA7697207CB36000E3DCCC /* SharkDevelopTestTask.xcdatamodel */,
+			);
+			currentVersion = 17AA7697207CB36000E3DCCC /* SharkDevelopTestTask.xcdatamodel */;
+			path = SharkDevelopTestTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 171AC2862076770E000AFAAF /* Project object */;
+}
