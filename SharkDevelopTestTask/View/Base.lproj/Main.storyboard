@@ -66,7 +66,8 @@
                                 <rect key="frame" x="12" y="278" width="351" height="311"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="1eE-KL-t9h" secondAttribute="height" multiplier="351:311" id="aop-kj-iVf"/>
+                                    <constraint firstAttribute="width" secondItem="1eE-KL-t9h" secondAttribute="height" multiplier="351:311" id="YC5-mm-wXM"/>
+                                    <constraint firstAttribute="width" constant="351" id="tz2-5j-89z"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherForecastCell" rowHeight="40" id="iLD-JF-jY8" customClass="WeatherForecastCell" customModule="SharkDevelopTestTask">
@@ -171,18 +172,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1eE-KL-t9h" secondAttribute="trailing" constant="12" id="1SQ-Ee-gtE"/>
                             <constraint firstItem="JtT-v1-uV0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Pz-TM-lBG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UZJ-q6-VEG" secondAttribute="trailing" constant="100" id="LxX-Af-CnR"/>
                             <constraint firstAttribute="bottom" secondItem="JtT-v1-uV0" secondAttribute="bottom" id="QFo-Br-mJa"/>
                             <constraint firstItem="UZJ-q6-VEG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="RfY-xw-NVi"/>
-                            <constraint firstItem="1eE-KL-t9h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Scl-Bm-Pbf"/>
-                            <constraint firstItem="s9A-Uw-L8r" firstAttribute="top" secondItem="1eE-KL-t9h" secondAttribute="bottom" constant="8" id="UAw-kG-SiF"/>
                             <constraint firstItem="JtT-v1-uV0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W7B-6h-9WM"/>
+                            <constraint firstItem="1eE-KL-t9h" firstAttribute="top" secondItem="UZJ-q6-VEG" secondAttribute="bottom" constant="8" id="XLV-qq-dZB"/>
                             <constraint firstItem="s9A-Uw-L8r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="ZLK-7z-l0d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s9A-Uw-L8r" secondAttribute="trailing" constant="12" id="biv-Lc-DdF"/>
+                            <constraint firstItem="1eE-KL-t9h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="ljo-xU-7qZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1eE-KL-t9h" secondAttribute="trailing" constant="12" id="oFc-qg-YDY"/>
                             <constraint firstItem="FK4-eN-pwV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pL2-Rc-kqA"/>
-                            <constraint firstItem="1eE-KL-t9h" firstAttribute="top" secondItem="UZJ-q6-VEG" secondAttribute="bottom" constant="8" id="s9E-av-Nvh"/>
+                            <constraint firstItem="s9A-Uw-L8r" firstAttribute="top" secondItem="1eE-KL-t9h" secondAttribute="bottom" constant="8" symbolic="YES" id="shz-IK-Fi2"/>
                             <constraint firstItem="UZJ-q6-VEG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="slv-c5-r3V"/>
                             <constraint firstItem="JtT-v1-uV0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="teg-Ow-iWP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s9A-Uw-L8r" secondAttribute="bottom" constant="20" id="xdQ-D7-597"/>

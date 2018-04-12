@@ -86,6 +86,8 @@ class WeatherViewController: UIViewController, UITableViewDataSource, UITableVie
                 
             }
             else {
+                self.showAlert(title: "Error", message: "There was an error receiving weather information")
+
                 print("Error \(String(describing: response.result.error))")
             }
             }
